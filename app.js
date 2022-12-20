@@ -4,12 +4,12 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var dotenv = require('dotenv');
 var hbs = require('hbs');
 var session = require('express-session');
 
 var index = require('./routes/index');
-
+dotenv.config();
 var app = express();
 
 // view engine setup
